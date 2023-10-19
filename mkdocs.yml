@@ -1,0 +1,36 @@
+site_name: 'Quix Docs'
+site_description: 'Quix Developer Documentation. Includes documentation (tutorials, reference guides, how-tos, concepts) for Quix Platform, Quix Streams client library, and REST and websocket APIs.'
+site_author: 'Quix.io'
+site_url: 'https://quix.io/docs'
+
+copyright: >
+  Copyright &copy; 2020 - 2023 Quix Analytics, Ltd. –
+  <a href="#__consent">Change cookie settings</a>
+
+docs_dir: docs/
+repo_name: quixio/quix-docs
+repo_url: https://github.com/quixio/quix-docs
+edit_uri: tree/dev/docs
+
+nav:
+  - 'Introduction': 'index.md'
+  - 'Contribute': 'contribute.md'
+
+plugins:
+  - social:
+      cards_layout_options:
+        background_image: layouts/background.png
+        #background_color: "#ff1493"
+
+  - search:
+      separator: '[\s\-\.]' 
+  - glightbox
+
+theme:
+  name: 'material'
+
+  #alternate:
+markdown_extensions:
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
